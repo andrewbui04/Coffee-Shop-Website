@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <title>BIN Coffee</title> 
+  <meta charset="utf-8" /> 
+  <meta name="description" content="Web Development" > 
+  <meta name="keywords"    content="HTML and CSS" > 
+  <meta name="author"      content="put your name here" > 
+  <link href="./css/style.css" rel="stylesheet" type="text/css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="./js/script.js"></script>
+  <script src="./js/jquery-1.9.1.min.js"></script>
+</head> 
+
+<body>
+  <div class="checkout">
+    <img class="checkout_pic" src="https://img4.goodfon.com/wallpaper/nbig/4/b6/kofe-coffee-cup-rassvet-chashka-good-morning-hot-utro.jpg" />
+    <div class="checkout_content">
+        <form action="http://mercury.swin.
+        edu.au/it000000/cos1
+        0005/regtest.php 
+         " method="post" id="order_form">
+            <div class="row_bin">
+                <div class="col_bin">
+                    <h3 class="title_bin">Delivery Info</h3>
+                    <div class="input_bin">
+                        <span>Name:</span>
+                        <input type="text" placeholder="Thai Anh Bui" id="txtfname">
+                    </div>
+                    <div class="input_bin">
+                        <span>Email:</span>
+                        <input type="email" placeholder="example@example.com" id="gmail">
+                    </div>
+                    <div class="input_bin">
+                        <span>Phone number:</span>
+                        <input type="number" placeholder="(+84)91 456 7893" id="phone"> 
+                    </div>
+                    <div class="input_bin">
+                        <span>Address:</span>
+                        <input type="text" placeholder="room-street-locality" id="txtaddress">
+                    </div>
+                    <div class="input_bin">
+                        <span>City:</span>
+                        <input type="text" placeholder="Hanoi" id="city">
+                    </div>
+                    
+                    <div class="flex_bin">
+                        <div class="input_bin">
+                            <span>State:</span>
+                            <input type="text" placeholder="vietnam" id="state">
+                        </div>
+                        <div class="input_bin">
+                            <span>Zip code:</span>
+                            <input type="text" placeholder="246 579" id="zip">
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="col_bin">
+                    <h3 class="title_bin">Billing Info</h3>
+                    <div class="input_bin">
+                        <span>Name on card:</span>
+                        <input type="text" placeholder="Thai Anh Bui" id="txtfname_billing">
+                    </div>
+                    <div class="input_bin">
+                        <span>Email:</span>
+                        <input type="email" placeholder="example@example.com" id="gmail_billing">
+                    </div>
+                    <div class="input_bin">
+                        <span>Phone number:</span>
+                        <input type="number" placeholder="(+84)91 456 7893" id="phone_billing">
+                    </div>
+                    <div class="input_bin">
+                        <span>Address:</span>
+                        <input type="text" placeholder="room-street-locality" id="txtaddress_billing">
+                    </div>
+                    <div class="input_bin">
+                        <span>City:</span>
+                        <input type="text" placeholder="Hanoi" id="city_billing">
+                    </div>
+                    
+                    <div class="flex_bin">
+                        <div class="input_bin">
+                            <span>State:</span>
+                            <input type="text" placeholder="vietnam" id="state_billing">
+                        </div>
+                        <div class="input_bin">
+                            <span>Zip code:</span>
+                            <input type="text" placeholder="246 579" id="zip_billing">
+                        </div>
+                    </div>
+  
+                    <label for="billing_address" class="billing_ad"><span style="color:black;font-size: 20px;font-weight: bold;">Same as delivery address</span></label>
+                    <input type="checkbox" class="billing_address" id="check_address" name="billing_address" value="">
+                </div>
+  
+                <div class="col_bin2">
+                    <h3 class="title_bin">Payment</h3>
+                    <div class="input_bin">
+                        <span style="color:red;margin-left:30px;font-size: 22px;">Accepted cards:</span>
+                        <img src="./images/card_img.png" alt="cards">
+  
+                        <div class="card_bin">
+                            <p class="card_type_bin" onclick="myFunction('mastercard_content')">MasterCard</p>
+                            <p class="card_type_bin" onclick="myFunction2('america_content')">AMERICAN EXPRESS</p>
+                            <p class="card_type_bin" onclick="myFunction3('visa_content')">VISA</p>
+                        </div>
+                        <div class="card_content_bin" id="mastercard_content">
+                            <div class="input_bin">
+                                <span>Cardholder name:</span>
+                                <input type="text" placeholder="Mr.Thai Anh">
+                            </div>
+                            <div class="input_bin">
+                                <span>Credit card number:</span>
+                                <input type="number" placeholder="2222-4444-6666-8888">
+                            </div>
+                            <div class="input_bin">
+                                <span>Exp month:</span>
+                                <input type="text" placeholder="March">
+                            </div>
+                            <div class="flex_bin">
+                                <div class="input_bin">
+                                    <span>Exp year:</span>
+                                    <input type="number" placeholder="2023">
+                                </div>
+                                <div class="input_bin">
+                                    <span>CVV:</span>
+                                    <input type="text" placeholder="1234">
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <div class="card_content_bin" id="america_content">
+                            <div class="input_bin">
+                                <span>Cardholder name:</span>
+                                <input type="text" placeholder="Mr.Thai Anh">
+                            </div>
+                            <div class="input_bin">
+                                <span>Credit card number:</span>
+                                <input type="number" placeholder="1234-225577-69969">
+                            </div>
+                            <div class="input_bin">
+                                <span>Exp month:</span>
+                                <input type="text" placeholder="March">
+                            </div>
+                            <div class="flex_bin">
+                                <div class="input_bin">
+                                    <span>Exp year:</span>
+                                    <input type="number" placeholder="2023">
+                                </div>
+                                <div class="input_bin">
+                                    <span>CVV:</span>
+                                    <input type="text" placeholder="1234">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_content_bin" id="visa_content">
+                            <div class="input_bin">
+                                <span>Cardholder name:</span>
+                                <input type="text" placeholder="Mr.Thai Anh">
+                            </div>
+                            <div class="input_bin">
+                                <span>Credit card number:</span>
+                                <input type="number" placeholder="2222-4444-6666-8888">
+                            </div>
+                            <div class="input_bin">
+                                <span>Exp month:</span>
+                                <input type="text" placeholder="March">
+                            </div>
+                            <div class="flex_bin">
+                                <div class="input_bin">
+                                    <span>Exp year:</span>
+                                    <input type="number" placeholder="2023">
+                                </div>
+                                <div class="input_bin">
+                                    <span>CVV:</span>
+                                    <input type="text" placeholder="1234">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Checkout" class="checkout_bin">
+        </form>
+    </div>
+  </div>
+  
+  <script>
+  /*Checkbox*/
+$(document).ready(function(){ 
+    $("#check_address").click(function(){ 
+    if ($("#check_address").is(":checked")) {
+     $("#txtfname_billing").val($("#txtfname").val());
+     $("#gmail_billing").val($("#gmail").val());
+     $("#phone_billing").val($("#phone").val());
+     $("#txtaddress_billing").val($("#txtaddress").val());
+     $("#city_billing").val($("#city").val());
+     $("#state_billing").val($("#state").val());
+     $("#zip_billing").val($("#zip").val());
+    } else { //Clear on uncheck
+     $("#txtfname_billing").val("");
+     $("#gmail_billing").val("");
+     $("#phone_billing").val("");
+     $("#txtaddress_billing").val("");
+     $("#city_billing").val("");
+     $("#state_billing").val("");
+     $("#zip_billing").val("");
+    
+    };
+   });
+
+  });
+  
+  </script>
+
+</body>
+</html>
